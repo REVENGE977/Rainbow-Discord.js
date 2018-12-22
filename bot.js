@@ -69,7 +69,6 @@ client.on('ready', () => {//new ready event
 })
 
 client.on("message", message => {//new msg event
- if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")//if he type the cmd in the bot dm return with this msg
   if (message.content === "r#help") {//the help cmd
       message.react('🌈')
         let rainembed = new Discord.RichEmbed()//new embed
