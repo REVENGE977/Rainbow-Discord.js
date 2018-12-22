@@ -40,8 +40,8 @@ console.log('Done The Watching Setup Completed')
 });
 //Best Rainbow Bot .
 client.on('message', message => {//new msg event
-let role = message.guild.roles.find('name', 'Rainbow bot.')
   if(message.content.startsWith(prefix + 'set')) {//to create the rainbow role
+	  let role = message.guild.roles.find('name', 'Rainbow bot.')
     if(role) return message.channel.send(`This Step Already Completed !`)//if the role already created return with this msg
   //start of create role 
   if(!role){
