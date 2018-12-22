@@ -40,7 +40,7 @@ console.log('Done The Watching Setup Completed')
 });
 //Best Rainbow Bot .
 client.on('message', message => {//new msg event
-	if(!message.guild.channel) return;
+if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")//if he type the cmd in the bot dm return with this msg
   if(message.content.startsWith(prefix + 'set')) {//to create the rainbow role
 	  let role = message.guild.roles.find('name', 'Rainbow bot.')
     if(role) return message.channel.send(`This Step Already Completed !`)//if the role already created return with this msg
@@ -69,6 +69,7 @@ client.on('ready', () => {//new ready event
 })
 
 client.on("message", message => {//new msg event
+ if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")//if he type the cmd in the bot dm return with this msg
   if (message.content === "r#help") {//the help cmd
       message.react('🌈')
         let rainembed = new Discord.RichEmbed()//new embed
@@ -94,7 +95,6 @@ The steps of the role did not worked .!!
 message.author.sendEmbed(rainembed)//send the embed to the author dm
     }})
    client.on('message', message => {//new cmd
-	   	if(!message.guild.channel) return;
 	   if(message.content.startsWith(`r#inv`)) { //the invite bot cmd
 		   if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")//if he type the cmd in the bot dm return with this msg
                  message.react('🌈')
