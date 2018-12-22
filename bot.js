@@ -88,7 +88,7 @@ The steps of the role did not worked .!!
 1- Place the role of the Rainbow above the colors or colored ranks if it
 2- Put the bot role above the role of the Rainbow 
 رآبط البوت - Bot Invite link
-- https://discordapp.com/oauth2/authorize?client_id=" + ${client.user.id} + "&scope=bot&permissions=2080374975
+- hhttp://cutt.us/HPkx6
 =====================🌈 RainbowBot. 🌈=====================
 **`)
 message.author.sendEmbed(rainembed)//send the embed to the author dm
