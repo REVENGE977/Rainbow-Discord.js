@@ -34,7 +34,7 @@ client.on('ready', () => {
   console.log('╔[════════════]╗')
   console.log('Created By: Revenge')
   console.log('╚[════════════]╝')
-client.user.setActivity("you",{type: 'WATCHING'});
+client.user.setActivity("r#help | By Revenge",{type: 'WATCHING'});
 console.log('Done The Watching Setup Completed')
 });
 //Best Rainbow Bot .
